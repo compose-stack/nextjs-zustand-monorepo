@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  
+  cs-nextjs-zustand-monorepo-dev:
+    build:
+      context: ./frontend
+      dockerfile: docker/Dockerfile.dev
+      target: runner
+    volumes:
+      - ./frontend:/app
+    command: "yarn next-webapp:dev"
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development

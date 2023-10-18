@@ -1,0 +1,6 @@
+version: 1
+stack:
+  service-name: cs-nextjs-zustand-monorepo
+  service-port: 3000
+  components: frontend
+  api-architecture: rest

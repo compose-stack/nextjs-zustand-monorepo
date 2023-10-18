@@ -1,0 +1,13 @@
+import { Link } from "@/components/link/Link";
+import { ForgotPasswordWizard } from "@/apps/auth/components/forgot-password-wizard/ForgotPasswordWizard";
+
+export default function ForgotPasswordPage() {
+  return (
+    <div>
+      <ForgotPasswordWizard />
+      <div className="m-t-20">
+        Not registered? <Link href="/register">Register here.</Link>
+      </div>
+    </div>
+  );
+}

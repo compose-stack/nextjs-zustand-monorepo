@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  
+  cs-nextjs-zustand-monorepo-test:
+    build:
+      context: ./frontend
+      dockerfile: docker/Dockerfile.test
+      target: runner
+    volumes:
+      - ./frontend:/app
+    command: "yarn next-webapp:test"
+    environment:
+      NODE_ENV: development
