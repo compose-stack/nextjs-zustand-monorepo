@@ -6,7 +6,7 @@ services:
     build:
       context: ./frontend
       dockerfile: docker/Dockerfile.test
-      target: runner
+      target: cs-nextjs-zustand-monorepo-test-runner
     volumes:
       - ./frontend:/app
     command: "yarn next-webapp:test"
