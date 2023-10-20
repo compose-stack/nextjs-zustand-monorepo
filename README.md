@@ -24,6 +24,10 @@ registration quickly.
 
 #### Note: this frontend component requires a backend.
 
+## Requirements
+
+This repository requires `docker` for the dockerized version or Node 18 to run natively.
+
 ## TL;DR
 
 Development:
@@ -31,7 +35,7 @@ Development:
 ```sh
 cd frontend
 yarn
-yarn webapp:dev
+yarn next-webapp:dev
 ```
 
 Test:
@@ -39,7 +43,7 @@ Test:
 ```sh
 cd frontend
 yarn
-yarn webapp:test
+yarn next-webapp:test
 ```
 
 
@@ -54,7 +58,7 @@ Requirements:
 ```sh
 cd frontend
 yarn
-yarn webapp:dev
+yarn next-webapp:dev
 ```
 
 The application will be available at: [`http://localhost:3000`](http://localhost:3000)
